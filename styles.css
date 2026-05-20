@@ -1,0 +1,86 @@
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: "Chalkduster", "Comic Sans MS", cursive;
+        }
+
+        #hutao {
+            width: 150px;
+            margin: 20px auto;
+        }
+
+        .keypad-container {
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            
+        }
+
+        #pin-input {
+            width: 100%;
+            font-size: 24px;
+            font-family: "Chalkduster", "Comic Sans MS", cursive;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid #be3e3e;
+            opacity: 1;
+        }
+
+        .keypad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .keypad button {
+            padding: 15px;
+            font-size: 18px;
+            font-family: "Chalkduster", "Comic Sans MS", cursive;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #be3e3e;
+            background-color:#edc8c8;
+            width: 60px;
+            height: 40px;
+        }
+
+
+        button:active {
+            background-color: #d8dadf;
+        }
+
+        .bdaycontainer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* Often necessary to define height for vertical alignment */
+            justify-content: center;
+            /* Centers children vertically */
+            align-items: center;
+            /* Centers children horizontally */
+        }
+
+        @keyframes spinAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spin-effect {
+            animation: spinAnimation 1s ease-in-out;
+        }
+
+        #birthdaycat {
+            width: 150px;
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+        }
